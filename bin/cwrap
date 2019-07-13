@@ -8,9 +8,9 @@ from cwrap.frontends.clang import ast_transforms, clang_parser
 
 
 def usage(exitval=0):
-    print('usage: run.py -i include-dir -i another-include-dir '\
+    print('usage: cwrap -i include-dir -i another-include-dir '\
         'header-name output-file')
-    print('example: run.py -i ~/mycode/inc libme/me.h me.pxd')
+    print('example: cwrap -i ~/mycode/inc libme/me.h me.pxd')
     sys.exit(exitval)
 
 def arg_parsing(sysargs):
